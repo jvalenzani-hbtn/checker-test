@@ -14,7 +14,7 @@
 int main(int argc, char *argv[])
 {
 	char *fone, *ftwo;
-	int fdone, fdtwo, sz = 8192, wr = 0, *buffer[8192];
+	int fdone, fdtwo, sz = 1024, wr = 0, *buffer[1024];
 
 	if (argc != 3)
 	{
