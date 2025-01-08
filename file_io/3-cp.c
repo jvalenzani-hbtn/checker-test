@@ -8,8 +8,6 @@
  * Return: Always 0 (Success)
  */
 
-#define BUFSIZ 1024
-
 int main(int argc, char *argv[])
 {
 	int fd_r, fd_w, r, a, b;
