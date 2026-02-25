@@ -6,4 +6,3 @@ valid = not (1 == 2)
 print("Language: Python")
 print(f"Version: {version}")
 print(f"Pi approx: {pi}\nComputation valid: {valid}")
-
