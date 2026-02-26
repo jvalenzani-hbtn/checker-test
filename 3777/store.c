@@ -26,19 +26,26 @@ int store_add(store_t *st, session_t *s)
     node_t *cur;
     node_t *n;
 
-    if (!st || !s || !s->id)
+    if (!st || !s || !s->id) {
+        if (s)
+            session_destroy(s);
         return 0;
+    }
 
     cur = st->head;
     while (cur) {
-        if (cur->sess && cur->sess->id && strcmp(cur->sess->id, s->id) == 0)
+        if (cur->sess && cur->sess->id && strcmp(cur->sess->id, s->id) == 0) {
+            session_destroy(s);
             return 0;
+        }
         cur = cur->next;
     }
 
     n = node_create(s);
-    if (!n)
+    if (!n) {
+        session_destroy(s);
         return 0;
+    }
 
     n->next = st->head;
     st->head = n;
