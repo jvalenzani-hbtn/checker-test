@@ -1,0 +1,10 @@
+ADD a 1 hello
+SET a 0123456789
+GET a
+SET a x
+GET a
+SET a 
+GET a
+SET a abc
+GET a
+EXIT

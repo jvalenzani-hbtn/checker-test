@@ -1,0 +1,12 @@
+ADD a 1 hello
+ADD b 2 world
+GET a
+SET a abcdefghij
+GET a
+DEL b
+GET b
+CLEAR
+GET a
+ADD c 3 xyz
+GET c
+EXIT

@@ -1,0 +1,7 @@
+ADD a 1 hello
+ADD a 2 other
+DEL z
+GET z
+CLEAR
+CLEAR
+EXIT

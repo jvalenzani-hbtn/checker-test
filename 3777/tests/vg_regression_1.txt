@@ -1,0 +1,11 @@
+CLEAR
+ADD a 1 hello
+ADD b 2 world
+ADD a 9 dup
+SET a 01234567890123456789
+DEL b
+ADD c 3 abc
+SET c z
+CLEAR
+CLEAR
+EXIT
