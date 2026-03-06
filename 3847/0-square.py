@@ -3,6 +3,7 @@
     Defines class Square
 '''
 
+
 class Square:
     '''This is the Square Class'''
     pass
