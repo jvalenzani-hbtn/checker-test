@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-'''
-This is the Square Class Module
+'''This is the Square Class Module
+    Defines class Square
 '''
 
-'''This is the Square Class'''
-class Square():
-	pass
 
+class Square:
+    '''This is the Square Class'''
+    pass
