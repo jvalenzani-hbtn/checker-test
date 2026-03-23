@@ -1,0 +1,31 @@
+classDiagram
+    class Library {
+        +add_book(book: Book): None
+        +register_user(user: User): None
+        +create_loan(book: Book, user: User): Loan
+    }
+
+    class Book {
+        +title: str
+        +author: str
+        +state: bool
+        +mark_as_unavailable(): None
+        +mark_as_available(): None
+    }
+
+    class User {
+        +name: str
+        +email: str
+    }
+
+    class Loan {
+        +start_date: str
+        +end_date: str
+        +close_loan(): None
+    }
+
+    Library "1" *-- "0..*" Book
+    Library "1" *-- "0..*" User
+    Library "1" *-- "0..*" Loan
+    Loan "0..*" --> "1" Book
+    Loan "0..*" --> "1" User
