@@ -14,4 +14,3 @@ class User:
         """
         self.name: str = name
         self.age: int = age
-      
